@@ -5,7 +5,7 @@
    ========================================================== */
 
 /* ---------- CONFIG ---------- */
-const API_BASE_URL = 'https://ai-prompt-studio-8ki8.onrender.com';
+const API_BASE_URL = 'https://ai-prompt-studio-8ki8.onrender.com/api';
 
 const STORAGE_KEYS = {
     TOKEN: 'aps_token',
