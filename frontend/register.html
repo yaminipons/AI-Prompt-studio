@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Account — AI Prompt Engineering Studio</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="ambient-bg">
+    <div class="ambient-blob b1"></div>
+    <div class="ambient-blob b2"></div>
+    <div class="ambient-blob b3"></div>
+</div>
+
+<button class="theme-toggle auth-theme-toggle" id="themeToggle" aria-label="Toggle theme">
+    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+</button>
+
+<div class="auth-wrapper">
+    <div class="auth-card glass-strong">
+        <div class="auth-header">
+            <div class="logo-mark">AI</div>
+            <h1>Create your account</h1>
+            <p>Start crafting expert-level prompts in minutes</p>
+        </div>
+
+        <form id="registerForm" novalidate>
+            <div class="form-group">
+                <label class="form-label" for="fullName">Full name</label>
+                <input type="text" id="fullName" class="form-input" placeholder="Jane Doe" autocomplete="name" required>
+                <span class="form-error" id="fullNameError"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="email">Email address</label>
+                <input type="email" id="email" class="form-input" placeholder="you@example.com" autocomplete="email" required>
+                <span class="form-error" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="password">Password</label>
+                <div class="password-field">
+                    <input type="password" id="password" class="form-input" placeholder="At least 8 characters" autocomplete="new-password" required>
+                    <button type="button" class="password-toggle" id="togglePassword" aria-label="Show password">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                    </button>
+                </div>
+                <span class="form-hint">Must contain at least one letter and one number</span>
+                <span class="form-error" id="passwordError"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="registerBtn">
+                <span class="btn-label">Create Account</span>
+                <span class="spinner"></span>
+            </button>
+        </form>
+
+        <div class="auth-footer">
+            Already have an account? <a href="login.html">Log in</a>
+        </div>
+    </div>
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

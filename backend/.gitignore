@@ -1,0 +1,50 @@
+# Compiled class files
+target/
+*.class
+
+# Maven
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.properties
+
+# Environment variables / secrets - NEVER commit this
+.env
+.env.local
+.env.*.local
+
+# IDE - VS Code
+.vscode/
+*.code-workspace
+
+# IDE - IntelliJ
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# IDE - Eclipse / STS
+.classpath
+.project
+.settings/
+bin/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Spring Boot
+HELP.md
+*.pid
+
+# Docker
+docker-data/
+
+# Test coverage
+/coverage/
+*.exec
+
+effective-pom.xml
